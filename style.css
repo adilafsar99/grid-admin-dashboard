@@ -48,18 +48,20 @@ button {
     justify-self: self-start;
 }
 
+#search-button {
+    cursor: pointer;
+}
+
 #searchbar {
     display: grid;
     width: 45vw;
     height: 25px;
+    padding: 5px;
     border-radius: 8px;
     border: none;
     background-color: var(--grey-bg);
 }
 
-#searchbar:focus {
-    outline: none;
-}
 
 .id-section {
     display: grid;
@@ -122,6 +124,12 @@ button {
     border-radius: 16px;
     border: none;
     cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.admin-button:hover {
+    background-color: dodgerblue;
+    transform: scale(1.1);
 }
 
 .navigation {
@@ -159,6 +167,15 @@ button {
     height: max-content;
 }
 
+.menu > li {
+    cursor: pointer;
+    transition: text-decoration 0.1s ease-out;
+}
+
+.menu > li:hover {
+    text-decoration: underline;
+}
+
 .menu > li > span {
     font-size: 0.9em;
     margin-right: 1rem;
@@ -194,7 +211,15 @@ button {
     border-left: 4px solid rgb(228, 111, 44);
     border-radius: 6px;
     background-color: #fff;
-    box-shadow: var(--shadow-efffect);
+    box-shadow: var(--shadow-effect);
+}
+
+span.fa-regular {
+    transition: color 0.1s ease-out;
+}
+
+span.fa-regular:hover {
+    color: var(--blue-color);
 }
 
 .card-text {
