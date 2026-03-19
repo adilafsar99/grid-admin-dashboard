@@ -179,7 +179,7 @@ button {
 
 .project-cards {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5em;
     padding: 0.5em;
     justify-content: center;
@@ -189,8 +189,6 @@ button {
     display: grid;
     grid-auto-rows: max-content;
     align-content: space-between;
-    height: 200px;
-    width: 300px;
     text-align: left;
     padding: 1rem;
     border-left: 4px solid rgb(228, 111, 44);
