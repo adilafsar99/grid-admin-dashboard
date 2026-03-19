@@ -1,7 +1,7 @@
 :root {
     --blue-color: cornflowerblue;
     --grey-bg: #e2dfdf;
-    --grey-text: #818181;
+    --grey-text: #424242;
     --shadow-effect: 0px 5px 6px 0px rgba(0,0,0,0.5)
 }
 
@@ -22,6 +22,7 @@ button {
     grid-template-rows: 140px 1fr;
     row-gap: 1px;
     color: #fff;
+    font-family: 'Handlee', cursive;
 }
 
 .header {
@@ -287,6 +288,10 @@ span.fa-regular:hover {
 
 .title {
     font-weight: bold;
+}
+
+.text {
+    color: var(--grey-text);
 }
 
 .trending-card {
