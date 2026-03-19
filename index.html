@@ -1,59 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5b053b265f.js" crossorigin="anonymous"></script>
-    <title>Admin Dashboard</title>
-</head>
-<body>
-    <div class="container">
-        <header class="header">
-           <div class="searchbar-row">
-               <div class="searchbar">
-                  <button id="search-button"><span class="fa-solid fa-search"></span></button>
-                  <input type="search" name="searchbar" id="searchbar">
-               </div>
-               <div class="admin-info">
-                  <span class="fa-regular fa-bell"></span>
-                  <img id="profile-image" src="./assets/images/profile-picture.svg" alt="profile-picture">
-                  <span>Admin Strator</span>
-               </div>
-           </div>
-           <div class="buttons-row">
-                <p>Buttons Row</p>
-           </div>
-        </header>
-       <nav class="navigation">
-           <div class="site-logo">
-             <span class="fa-solid fa-boxes-stacked"></span>
-             <p>Dashboard</p>
-           </div>
-           <div class="menu-div menu-one">
-              <ul class="menu">
-                <li><span class="fa-solid fa-home"></span>Home</li>
-                <li><span class="fa-solid fa-id-card"></span>Profile</li>
-                <li><span class="fa-solid fa-message"></span>Messages</li>
-                <li><span class="fa-solid fa-history"></span>History</li>
-                <li><span class="fa-solid fa-list-check"></span>Tasks</li>
-                <li><span class="fa-solid fa-users"></span>Communities</li>
-              </ul>
-           </div>
-           <div class="menu-div menu-two">
-               <ul class="menu">
-                <li><span class="fa-solid fa-gear"></span>Settings</li>
-                <li><span class="fa-solid fa-question"></span>Support</li>
-                <li><span class="fa-solid fa-user-shield"></span>Privacy</li>
-               </ul>
-           </div>
-       </nav>
-       <main class="projects">
-           <p>Projects</p>
-       </main>
-       <aside class="sidebar">
-           <p>Sidebar</p>
-       </aside>
-    </div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/5b053b265f.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Admin Dashboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="searchbar-row">
+					<div class="searchbar">
+						<button id="search-button">
+							<span class="fa-solid fa-search"></span>
+						</button>
+						<input type="search" name="searchbar" id="searchbar" />
+					</div>
+					<div class="id-section">
+						<span class="fa-regular fa-bell"></span>
+						<img
+							id="profile-image"
+							src="./assets/images/profile-picture.svg"
+							alt="profile picture"
+						/>
+						<span>Admin Strator</span>
+					</div>
+				</div>
+				<div class="buttons-row">
+					<div class="admin-info">
+						<img
+							id="admin-image"
+							src="./assets/images/profile-picture.svg"
+							alt="profile picture"
+						/>
+						<div class="greeting">
+							<span id="greeting-text">Hi there,</span>
+							<span id="admin-name">Admin Strator (@admin)</span>
+						</div>
+					</div>
+					<div class="buttons">
+						<button class="admin-button">New</button>
+						<button class="admin-button">Upload</button>
+						<button class="admin-button">Share</button>
+					</div>
+				</div>
+			</header>
+			<nav class="navigation">
+				<div class="site-logo">
+					<span class="fa-solid fa-boxes-stacked"></span>
+					<p>Dashboard</p>
+				</div>
+				<div class="menu-div menu-one">
+					<ul class="menu">
+						<li><span class="fa-solid fa-home"></span>Home</li>
+						<li><span class="fa-solid fa-id-card"></span>Profile</li>
+						<li><span class="fa-solid fa-message"></span>Messages</li>
+						<li><span class="fa-solid fa-history"></span>History</li>
+						<li><span class="fa-solid fa-list-check"></span>Tasks</li>
+						<li><span class="fa-solid fa-users"></span>Communities</li>
+					</ul>
+				</div>
+				<div class="menu-div menu-two">
+					<ul class="menu">
+						<li><span class="fa-solid fa-gear"></span>Settings</li>
+						<li><span class="fa-solid fa-question"></span>Support</li>
+						<li><span class="fa-solid fa-user-shield"></span>Privacy</li>
+					</ul>
+				</div>
+			</nav>
+			<main class="projects">
+				<p>Projects</p>
+			</main>
+			<aside class="sidebar">
+				<p>Sidebar</p>
+			</aside>
+		</div>
+	</body>
 </html>
