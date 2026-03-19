@@ -266,3 +266,8 @@ button {
 .trending-user-image {
     width: 40px;
 }
+
+.credit-link {
+    color: #fff;
+    font-size: 90%;
+}
