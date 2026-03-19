@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 
 .container {
@@ -17,13 +16,57 @@
     grid-column: 2 / -1;
     display: grid;
     grid-template-rows: repeat(2, 80px);
-    background-color: crimson;
+    background-color: #fff;
+    padding: 0 2em;
     border: 2px solid #000;
 }
 
 .searchbar-row {
     grid-row: 1;
-    border: 2px solid #000;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+}
+
+.searchbar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    column-gap: 10px;
+    justify-self: self-start;
+}
+
+#search-button {
+    background-color: transparent;
+    border: none;
+}
+
+#searchbar {
+    display: grid;
+    width: 40vw;
+    height: 25px;
+    border-radius: 8px;
+    border: none;
+    background-color: #e2dfdf;
+}
+
+#searchbar:focus {
+    border: none;
+}
+
+.admin-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    column-gap: 0.8rem;
+    align-items: center;
+    justify-self: right;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#profile-image {
+    width: 50px;
 }
 
 .buttons-row {
@@ -40,6 +83,7 @@
     background-color: cornflowerblue;
     border: 2px solid #000;
     font-size: 1.2em;
+    color: #fff;
 }
 
 .site-logo {
