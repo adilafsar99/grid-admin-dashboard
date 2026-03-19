@@ -1,2 +1,1 @@
-# grid-admin-dashboard
-A dashboard made to practice the Grid layout module.
+I did not use flex anywhere even though it was really frustrating but I had to do everything in grid for this execise. Now I know I'll probably never use grid for individual components because flexbox does it so intuitively.
